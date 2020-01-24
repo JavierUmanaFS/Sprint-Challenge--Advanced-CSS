@@ -1,1 +1,28 @@
 // Mixins Here
+
+.custom-btn(){
+    background-color: darkblue;
+    margin: 0 10px 20px 0px ;
+    cursor: pointer;
+    width: 40%;
+    height: 5vh;
+    font-size: 1.9rem;
+    border-radius: 10px;
+    color:white;
+
+    &:hover {
+       background-color:lighten(darkblue, 50%);
+       color: red;
+    }
+}
+
+.height-width(@height, @width){
+    height:@height;
+    width:@width;
+}
+
+.display(@justify: none, @align:none){
+    display: flex;
+    justify-content:@justify;
+    align-items:@align;
+}
